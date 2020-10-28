@@ -1,5 +1,6 @@
 import React from "react"
-import { Header, Footer } from "../components"
+import {  Footer } from "../components"
+import Header from "../containers/headerContainer"
 import { useStaticQuery, graphql } from "gatsby"
 
 const PageLayout = ({ children }) => {

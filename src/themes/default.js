@@ -4,7 +4,7 @@ export default {
     main: "Inter, sans-serif",
   },
   colors: {
-    primaryOne: "#E5E5E5",
+    primaryOne: "#FFFFFF",
     primaryTwo: "#202336",
     primaryThree: "#FB8F1D",
     accentOne: "#042521",

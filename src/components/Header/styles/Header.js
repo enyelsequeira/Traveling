@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components/macro"
 import { Link as ReactScroll } from "react-scroll"
 import Img from "gatsby-image"
 import { Link } from "gatsby"
@@ -114,7 +114,6 @@ export const NavLinks = styled(ReactScroll)`
   }
 `
 export const PageLink = styled(Link)`
-  color: #141414;
   display: flex;
   align-items: center;
   text-decoration: none;

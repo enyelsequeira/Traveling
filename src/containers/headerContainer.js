@@ -56,7 +56,7 @@ const HeaderContainer = ({siteTitle}) => {
             <Header.PageLink to="/">Home</Header.PageLink>
           </Header.NavItem>
           <Header.NavItem>
-            <Header.PageLink to="/destinations">Destinations</Header.PageLink>
+            <Header.PageLink to="/destinations/">Destinations</Header.PageLink>
           </Header.NavItem>
           <Header.NavItem>
             <Header.PageLink to="/about">About</Header.PageLink>

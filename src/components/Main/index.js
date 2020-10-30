@@ -43,4 +43,5 @@ Main.RightTextSpan = function MainRightTextSpan ({children, color,  ...restProps
     <RightTextSpan color={color} {...restProps}>{children}</RightTextSpan>
   )
 }
+//code
 export default  Main

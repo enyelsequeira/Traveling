@@ -54,10 +54,13 @@ const DestinationHeroContainer = () => {
       <DestinationHero.Container>
         {
           data.allContentfulBlogPost.edges.map((edge) => {
-            return <Cards  initial="hidden" animate='visible' variants={variants} key={edge.node.title}>
+            return <Cards whileHover={{
+                scale: 1.03,
+                transition: { duration: 1 },
+            }}  key={edge.node.slug} initial="hidden" animate='visible' variants={variants} >
               <Cards.Title initial={{opacity: 0}} animate={{  scale: 1, opacity: 1, transition:{ease: "easeIn", delay: 2.5}}} >{edge.node.title}</Cards.Title>
-                    <Cards.ImageWrapper whileHover={{scale: 1.1}}>
-                        <Cards.Image  fluid={edge.node.countryImage.fluid}/>
+                    <Cards.ImageWrapper whileHover={{scale: 1}}>
+                        <Cards.Image  fluid={edge.node.countryImage.fluid} alt={edge.node.slug}/>
                     </Cards.ImageWrapper>
 
               <Cards.Description> {edge.node.description.description}</Cards.Description>

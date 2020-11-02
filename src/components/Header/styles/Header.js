@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 
 export const HeaderSection = styled.nav`
   background: ${({ active, theme }) =>
-  active ? theme.colors.primaryOne : "hsl(232.7,27.3%,23.7%)"};
+  active ? theme.colors.primaryOne : theme.colors.primaryTwo};
   height: 80px;
   display: flex;
   justify-content: center;
@@ -75,7 +75,7 @@ export const NavMenu = styled.ul`
     top: ${({ click }) => (click ? "100%" : "-1000px")};
     opacity: 1;
     transition: all 0.2s ease;
-    background: rgba(255, 246, 235, 0.9);
+ background: ${props => props.theme.colors.accentOne}
   }
 `
 export const NavItem = styled.li`
@@ -102,7 +102,7 @@ export const NavLinks = styled(ReactScroll)`
 
   &:hover {
     cursor: pointer;
-    color: ${props => props.theme.colors.accent1};
+    color: ${props => props.theme.colors.accentOne};
   }
   @media screen and (max-width: 960px) {
     text-align: center;
@@ -110,7 +110,7 @@ export const NavLinks = styled(ReactScroll)`
     padding: 2rem;
     width: 100%;
     display: table;
-    color: ${props => props.theme.colors.background1};
+    color: ${props => props.theme.colors.primaryThree};
   }
 `
 export const PageLink = styled(Link)`
@@ -125,11 +125,11 @@ export const PageLink = styled(Link)`
  color: ${({theme}) => (theme.colors.primaryTwo)};
 
   &.active {
-    border-bottom: 3px solid ${props => props.theme.colors.accent1};
+    border-bottom: 3px solid ${props => props.theme.colors.accentOne};
   }
 
   &:hover {
-    color: ${props => props.theme.colors.accent1};
+    color: ${props => props.theme.colors.accentOne};
   }
   @media screen and (max-width: 960px) {
     text-align: center;
@@ -137,6 +137,6 @@ export const PageLink = styled(Link)`
     padding: 2rem;
     width: 100%;
     display: table;
-    color: ${props => props.theme.colors.background1};
+    color: ${props => props.theme.colors.primaryOne};
   }
 `

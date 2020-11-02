@@ -6,7 +6,7 @@ module.exports = {
   siteMetadata: {
     title: `Traveling around the World at an affordable price`,
     description: `This is a blog to showcase latest travel and we will be sharing our tips to make your travels easier`,
-    author: `Enyel Sequeira`,
+    author: `travelwithME`,
     siteUrl: "https://www.travelwithem.com",
   },
   plugins: [
@@ -18,6 +18,20 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Travel WithME`,
+        short_name: `Travel withME`,
+        start_url: `/`,
+        background_color: `#002F34`,
+        theme_color: `#6AF0B0`,
+        display: `minimal-ui`,
+        icon: `src/images/logo.png`,
+      },
+    },
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {

@@ -1,7 +1,7 @@
 import React from "react"
-import {  Footer } from "../components"
 import Header from "../containers/headerContainer"
 import { useStaticQuery, graphql } from "gatsby"
+import FooterContainer from "../containers/footerContainer"
 
 const PageLayout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -19,7 +19,7 @@ const PageLayout = ({ children }) => {
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
       <main>{children}</main>
-      <Footer siteAuthor={data.site.siteMetadata.author} />
+      <FooterContainer siteAuthor={data.site.siteMetadata.author} />
     </>
   )
 }

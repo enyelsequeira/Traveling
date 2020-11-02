@@ -9,8 +9,11 @@ border: 1px solid ${({theme}) => (theme.colors.primaryOne)};
 display: flex;
 flex-direction: column;
 margin: 1rem 0;
-border-radius: 12px;
-box-shadow: 5px -2px 8px 0px ${({theme}) => (theme.colors.accentTwo)};
+border-radius: 27px;
+background: ${({theme}) => (theme.colors.primaryOne)};
+box-shadow:  10px 10px 20px #c4c4c4, 
+             -10px -10px 20px #ffffff;
+
 `
 
 export const Title = styled(motion.h2)`

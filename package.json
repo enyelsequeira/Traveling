@@ -18,8 +18,10 @@
     "babel-plugin-styled-components": "^1.11.1",
     "framer-motion": "^2.9.4",
     "gatsby": "^2.24.85",
+    "gatsby-background-image": "^1.1.2",
     "gatsby-image": "^2.4.21",
     "gatsby-plugin-google-fonts": "^1.0.1",
+    "gatsby-plugin-manifest": "^2.5.1",
     "gatsby-plugin-react-helmet": "^3.3.14",
     "gatsby-plugin-sharp": "^2.6.43",
     "gatsby-plugin-sitemap": "^2.4.17",
@@ -35,7 +37,10 @@
     "react-dom": "^16.12.0",
     "react-helmet": "^6.1.0",
     "react-icons": "^3.11.0",
+    "react-intersection-observer": "^8.30.0",
     "react-scroll": "^1.8.1",
+    "react-simple-maps": "^2.3.0",
+    "react-tooltip": "^4.2.10",
     "styled-components": "^5.2.0"
   },
   "devDependencies": {

@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../layout/Layout"
 import {graphql} from "gatsby"
-// import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
+import BlogLayoutContainer from "../containers/blogLayoutContainer"
 
 
 export const query = graphql`
@@ -9,30 +9,36 @@ query($slug: String!){
     contentfulBlogPost(slug: {eq: $slug}){
         title
         publishedDate(formatString: "MMMM Do, YYYY")
-       
+        images{
+            title
+            id
+            fluid( maxHeight: 250, quality: 95) {
+                src
+                ...GatsbyContentfulFluid_withWebp
+            }
+        }
+        flag{
+            fluid(maxWidth: 100){
+                src
+            }
+        }
+        childContentfulBlogPostBlogpostRichTextNode{
+            json
+            fields {
+                readingTime {
+                    text
+                    words
+                }
+            }
+        }
     }
 }
 `
 
 const Blog = (props) => {
-  // const options = {
-  //   renderNode: {
-  //     "embedded-asset-block": (node) => {
-  //       const alt = node.data.target.fields.title['en-US']
-  //       const url = node.data.target.fields.file['en-US'].url
-  //       console.log(url, "555454a54")
-  //       return <img alt={alt} src={url} />
-  //     }
-  //   }
-  // }
   return(
     <Layout>
-      <h1>{props.data.contentfulBlogPost.title}</h1>
-      <p>{props.data.contentfulBlogPost.publishedDate}</p>
-      {/*{*/}
-      {/*  documentToReactComponents(props.data.contentfulBlogPost.body.json, options)*/}
-      {/*}*/}
-
+      <BlogLayoutContainer data={props.data.contentfulBlogPost} />
     </Layout>
   )
 }

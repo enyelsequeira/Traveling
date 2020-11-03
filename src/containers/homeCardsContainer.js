@@ -1,8 +1,6 @@
 import React from "react"
 import {  HomeCards, SmallCards } from "../components"
 import { graphql, useStaticQuery } from "gatsby"
-// import { useInView } from "react-intersection-observer";
-// import {  useAnimation } from "framer-motion";
 
 const variants = {
   hidden: { opacity: 0, x: "-100vh"  },

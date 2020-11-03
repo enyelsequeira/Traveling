@@ -1,17 +1,17 @@
 import React from "react"
 import { CardsContainer, CardsImage, CardsImageContainer, CardsTitle } from "./styles/homeCards"
 
-const SmallCards = ({children, ...restProps}) =>{
+const HomeCards = ({children, ...restProps}) =>{
   return <CardsContainer {...restProps}>{children}</CardsContainer>
 }
 
-SmallCards.CardsImage = function SmallCardsImage({children,...restProps}){
+HomeCards.CardsImage = function HomeCardsImage({children,...restProps}){
   return <CardsImage   {...restProps}>{children}</CardsImage>
 }
-SmallCards.CardsTitle = function SmallCardsTitle({children, ...restProps}){
+HomeCards.CardsTitle = function HomeCardsTitle({children, ...restProps}){
   return <CardsTitle {...restProps}>{children}</CardsTitle>
 }
-SmallCards.CardsImageContainer = function SmallCardsImageContainer({children, ...restProps}){
+HomeCards.CardsImageContainer = function HomeCardsImageContainer({children, ...restProps}){
   return <CardsImageContainer {...restProps}>{children}</CardsImageContainer>
 }
-export default  SmallCards
+export default  HomeCards

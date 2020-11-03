@@ -7,7 +7,7 @@ import {
 } from "react-simple-maps";
 import { graphql, useStaticQuery } from "gatsby"
 import styled from "styled-components/macro"
-import {navigate} from 'gatsby'; //import navigate from gatsb
+import {navigate} from 'gatsby';
 
 
 const Wrapper = styled.div`
@@ -74,7 +74,6 @@ const MapChart = ({ setTooltipContent }) => {
                     data.allContentfulBlogPost.edges.find((edge) => {
                       if(edge.node.slug === NAME_LONG.toLowerCase()){
                         resolve= edge.node.slug;
-                        console.log(edge.node.slug, NAME_LONG.toLowerCase())
                         return navigate(`/destinations/${edge.node.slug}`)
                       }
                     })

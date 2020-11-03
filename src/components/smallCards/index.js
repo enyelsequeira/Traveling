@@ -5,28 +5,28 @@ import {
   Title,
   TitleContainer,
   TitleLink
-} from "./styles/carrousel"
+} from "./styles/smallCards"
 
-const Carrousel = ({children, ...restProps}) => {
+const SmallCards = ({children, ...restProps}) => {
   return <CarrouselSection {...restProps}>{children}</CarrouselSection>
 }
-Carrousel.Container = function CarrouselContainer({children, ...restProps}){
+SmallCards.Container = function SmallCardsContainer({children, ...restProps}){
   return <Container {...restProps}>{children}</Container>
 }
-Carrousel.TitleContainer = function TitleContainers({children, ...restProps}){
+SmallCards.TitleContainer = function TitleContainers({children, ...restProps}){
   return <TitleContainer {...restProps}>{children}</TitleContainer>
 }
-Carrousel.Title = function CarrouselTitle({children, ...restProps}){
+SmallCards.Title = function SmallCardsTitle({children, ...restProps}){
   return <Title {...restProps}>{children}</Title>
 }
-Carrousel.TitleLink = function CarrouselTitleLink({children, ...restProps}){
+SmallCards.TitleLink = function CarrouselTitleLink({children, ...restProps}){
   return <TitleLink  {...restProps}>{children}</TitleLink >
 }
 
-Carrousel.ContainerImage = function CarrouselContainerImage({children, ...restProps}){
+SmallCards.ContainerImage = function SmallCardsContainerImage({children, ...restProps}){
   return <ContainerImage {...restProps}>{children}</ContainerImage>
 
 }
 
 
-export default Carrousel
+export default SmallCards

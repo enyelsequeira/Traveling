@@ -1,7 +1,6 @@
 import React from "react"
 import { Cards, DestinationHero } from "../components"
 import {graphql, useStaticQuery } from "gatsby"
-// import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
 
 const variants = {
@@ -76,6 +75,3 @@ const DestinationHeroContainer = () => {
 
 export default DestinationHeroContainer
 
-// {
-//     documentToReactComponents(edge.node.body.json)
-// }

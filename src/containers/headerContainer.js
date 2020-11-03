@@ -26,7 +26,7 @@ const HeaderContainer = ({siteTitle}) => {
   useEffect(() => {
     changeNav()
     window.addEventListener("scroll", changeNav)
-  }, [])
+  })
   const data = useStaticQuery(graphql`
       query {
           icon: file(relativePath: { eq: "logo.png" }) {

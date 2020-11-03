@@ -57,6 +57,15 @@ module.exports = {
       }
     },
     {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          `gatsby-remark-reading-time`,
+        ],
+      },
+    },
+
+    {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
@@ -73,6 +82,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-styled-components`,
+    'gatsby-plugin-readingtime-contentful',
 
     {
       resolve: `gatsby-source-contentful`,

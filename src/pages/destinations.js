@@ -3,8 +3,7 @@ import React from "react"
 import SEO from "../utils/seo"
 import Layout from "../layout/Layout"
 import DestinationHeroContainer from "../containers/destinationsHeroContainer"
-//
-//
+
 const Destinations = () => {
 //   const data = useStaticQuery(graphql`
 //       query{

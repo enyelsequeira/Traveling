@@ -1,14 +1,14 @@
 import styled from "styled-components/macro"
 
 export const BlogSection = styled.section`
-
+padding: 1rem;
 `
 
 export const Container = styled.div`
 max-width: 1280px;
 margin: 2rem auto;
 padding: 1rem;
-border-radius: 50px;
+border-radius: 20px;
 background: #c2fff7;
 box-shadow:  5px 5px 5px #1a1c2b, 
              -5px -5px 8px #262a41;
@@ -28,7 +28,7 @@ margin: 2rem 0;
 `
 
 export const Title = styled.h1`
- font-size: ${({theme}) => (theme.typography.h1.size)};
+ font-size: ${({theme}) => (theme.typography.h2.size)};
  line-height: ${({theme}) => (theme.typography.h1.line)};
  font-weight: ${({theme}) => (theme.typography.h1.weight)};
  text-transform: uppercase;
@@ -70,6 +70,5 @@ margin: 1rem 0;
 `
 
 export const ImagesContainer = styled.div`
-border: 1px solid red;
 `
 

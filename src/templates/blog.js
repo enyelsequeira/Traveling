@@ -12,13 +12,13 @@ query($slug: String!){
         images{
             title
             id
-            fluid( maxHeight: 250, quality: 95) {
+            fluid( quality: 100) {
                 src
                 ...GatsbyContentfulFluid_withWebp
             }
         }
         flag{
-            fluid(maxWidth: 100){
+            fluid(maxWidth: 400){
                 src
             }
         }

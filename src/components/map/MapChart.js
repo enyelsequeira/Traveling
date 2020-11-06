@@ -13,9 +13,10 @@ import {navigate} from 'gatsby';
 const Wrapper = styled.div`
 border: 2px solid #1b1e2e;
 width: 60%;
+max-width: 1280px;
 margin: 5rem auto;
 border-radius: 50px;
-box-shadow: 10px 10px 20px #1b1e2e;
+box-shadow: 5px 5px 8px #1b1e2e;
 @media screen and (max-width: 900px){
 width: 95%;
 

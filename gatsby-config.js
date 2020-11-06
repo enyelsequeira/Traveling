@@ -7,7 +7,7 @@ module.exports = {
     title: `Traveling around the World at an affordable price`,
     description: `This is a blog to showcase latest travel and we will be sharing our tips to make your travels easier`,
     author: `travelwithME`,
-    siteUrl: "https://www.travelwithem.com",
+    siteUrl: "https://www.travelwithME.com",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

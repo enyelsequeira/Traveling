@@ -8,3 +8,6 @@ export {default as HomeCards} from "./smallCards"
 export {default as SmallCards} from "./homeCards"
 export {default as Map} from "./map"
 export {default as Blog} from "./blogLayout"
+// about page
+
+export {default as About} from "./aboutPage"

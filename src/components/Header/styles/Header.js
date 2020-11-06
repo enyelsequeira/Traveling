@@ -129,7 +129,7 @@ export const PageLink = styled(Link)`
   }
 
   &:hover {
-    color: ${props => props.theme.colors.accentOne};
+    color: ${props => props.theme.colors.primaryThree};
   }
   @media screen and (max-width: 960px) {
     text-align: center;

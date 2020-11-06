@@ -1,13 +1,13 @@
 import React from "react"
 import {
-  BlogBody,
+  BlogBody, BlogBodyContainer,
   BlogSection,
   Container,
-  CountryFlag,
-  ImagesContainer,
-  ReadingTime,
+  CountryFlag,  Data,
+  ImagesContainer, InformationContainer,
+  ReadingTime, SpanText,
   Title,
-  TitleContainer
+  TitleContainer, TitleTextContainer,
 } from "./styles/blogLayout"
 
 const BlogLayout = ({children, ...restProps}) => {
@@ -22,6 +22,9 @@ BlogLayout.Container = function BlogLayoutContainer({children, ...restProps}){
 BlogLayout.TitleContainer = function BlogLayoutTitleContainer({children, ...restProps}){
   return <TitleContainer {...restProps}>{children}</TitleContainer>
 }
+BlogLayout.TitleTextContainer = function BlogLayoutTitleTextContainer({children, ...restProps}){
+  return <TitleTextContainer {...restProps}>{children}</TitleTextContainer>
+}
 BlogLayout.CountryFlag = function BlogLayoutCountryFlag({children, ...restProps}){
   return <CountryFlag {...restProps}>{children}</CountryFlag>
 }
@@ -29,9 +32,22 @@ BlogLayout.CountryFlag = function BlogLayoutCountryFlag({children, ...restProps}
 BlogLayout.Title = function BlogLayoutTitle({children, ...restProps}){
   return <Title {...restProps}>{children}</Title>
 }
-BlogLayout.ReadingTime = function BlogLayoutReadingTime({children, ...restProps}){
-  return <ReadingTime {...restProps}>{children}</ReadingTime>
+BlogLayout.BlogBodyContainer = function BlogLayoutBodyContainer({children, ...restProps}){
+  return <BlogBodyContainer {...restProps}>{children}</BlogBodyContainer>
 }
+
+// Country informtaion
+BlogLayout.InformationContainer = function BlogLayoutInformationContainer({children, ...restProps}){
+  return <InformationContainer {...restProps}>{children}</InformationContainer>
+}
+BlogLayout.SpanText = function BlogLayoutSpanText({children, ...restProps}){
+  return <SpanText {...restProps}>{children}</SpanText>
+}
+BlogLayout.Data = function BlogLayoutData({children, ...restProps}){
+  return <Data {...restProps}>{children}</Data>
+}
+
+
 BlogLayout.BlogBody  = function BlogLayoutBody({children, ...restProps}){
   return <BlogBody {...restProps}>{children}</BlogBody>
 }

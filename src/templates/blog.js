@@ -7,6 +7,15 @@ import BlogLayoutContainer from "../containers/blogLayoutContainer"
 export const query = graphql`
 query($slug: String!){
     contentfulBlogPost(slug: {eq: $slug}){
+        visa
+        currency
+        spokenLanguage
+        topCities
+        countryImage{
+            fluid(maxWidth: 1200,  quality: 100){
+                ...GatsbyContentfulFluid_withWebp
+            }
+        }
         title
         publishedDate(formatString: "MMMM Do, YYYY")
         images{

@@ -6,7 +6,7 @@ export const CarrouselSection= styled.section``
 
 export const Container = styled.div`
 //border: 1px solid red;
-max-width: 1300px;
+max-width: 1280px;
 margin: 4rem auto;
 `
 export const TitleContainer = styled.div`

@@ -25,26 +25,31 @@ border: 1px solid green;
 
 export const ModalSection = styled(motion.section)`
     max-width: 40%;
+    width: 40%;
     border-radius: 10px;
    padding: 2rem;
    position: absolute;
-   margin:0 auto;
-   display:table;
-   position: absolute;
+   margin: 0 auto;
+   display: table;
    left: 0;
    right:0;
-   top: 50%; 
+   top: 110%; 
     background: rgba(0, 0, 0, 0.8);
     @media ${({ theme }) => theme.breakpoints.lg} {
-max-width: 60%;
+  max-width: 60%;
+   width: 60%;
+
   }
    @media ${({ theme }) => theme.breakpoints.md} {
-max-width: 93%;
+   max-width: 93%;
+   width: 90%;
+
   }
    @media ${({ theme }) => theme.breakpoints.sm} {
     left: 0;
    right:0;
    top: 150%;
+   width: 70%;
   }
 `
 export const ModalInside = styled(motion.div)`
@@ -67,8 +72,8 @@ position: relative;
 padding: 1rem;
 left: 54%;
 top: -64px;
-background:${({theme}) => (theme.colors.primaryOne)};
-color: ${({theme}) => theme.colors.primaryTwo};
+background:${({theme}) => (theme.colors.primaryTwo)};
+color: ${({theme}) => theme.colors.primaryOne};
 font-size: ${({theme}) => theme.typography.btnText.size};
 text-transform: ${({theme}) => theme.typography.btnText.transform} ;
 font-weight: ${({theme}) => theme.typography.btnText.weight};

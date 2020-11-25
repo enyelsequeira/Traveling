@@ -6,8 +6,11 @@
 
 To build a functional blog using contentful to make it easier for others to change or add a post to the blog. And Allow others to share their experience while traveling.
 
+![Travel WithME](https://github.com/enyelsequeira/Traveling/blob/main/src/images/video.gif)
+
 ![Travel withME](https://github.com/enyelsequeira/Traveling/blob/main/src/images/travel1.svg)
 ![Travel WithME](https://github.com/enyelsequeira/Traveling/blob/main/src/images/travelers.svg)
+
 
 ## Key Concepts
 

@@ -3,7 +3,6 @@ import Layout from "../layout/Layout"
 import AboutPageContainer from "../containers/aboutPageContainer"
 import SEO from "../utils/seo"
 import { useStaticQuery, graphql } from "gatsby"
-import FooterContainer from "../containers/footerContainer"
 
 
 

@@ -43,6 +43,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
 
     `gatsby-transformer-sharp`,
+
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -92,6 +93,14 @@ module.exports = {
         downloadLocal: true
       }
     },
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /assets/ // See below to configure properly
+        }
+      }
+    }
 
   ],
 }

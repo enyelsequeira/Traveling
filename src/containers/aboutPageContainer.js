@@ -1,6 +1,5 @@
 import React from "react"
 import { About } from "../components"
-import AboutPage from "../components/aboutPage"
 
 const AboutPageContainer = ({siteAuthor}) => {
   return <About>

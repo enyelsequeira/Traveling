@@ -37,6 +37,8 @@ height: 350px;
 margin: 1rem auto;
 border-radius: 12px;
 box-shadow: 5px -2px 8px 0px ${({theme}) => (theme.colors.accentTwo)};
+
+
 `
 
 export const Description  = styled.p`

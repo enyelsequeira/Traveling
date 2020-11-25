@@ -5,7 +5,7 @@ import {
   Container,
   CountryFlag,  Data,
   ImagesContainer, InformationContainer,
-  ReadingTime, SpanText,
+   SpanText,
   Title,
   TitleContainer, TitleTextContainer,
 } from "./styles/blogLayout"

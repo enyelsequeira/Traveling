@@ -26,6 +26,7 @@ margin: auto;
 background-size: cover;
 background-position: center center;
 `
+
 export const CardsTitle = styled.p`
 width: fit-content;
 padding: .2rem 1rem;

@@ -11,3 +11,4 @@ export {default as Blog} from "./blogLayout"
 // about page
 
 export {default as About} from "./aboutPage"
+export {default as PartnerPage} from "./travelPartnerHero"
